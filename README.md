@@ -27,7 +27,7 @@ You first need to create a Webhook:
 import {
   DiscordWebhook,
   DiscordWebhookMessage,
-} from "https://github.com/herkulessi/DiscordWebhook/DiscordWebhook.ts";
+} from "https://github.com/herkulessi/DiscordWebhook/raw/master/DiscordWebhook.ts";
 // discordWebhookUrl is the URL you get from Discord.
 // I dont think this works for Application-owned webhooks.
 let webhook = new DiscordWebhook(discordWebhookUrl);
@@ -37,7 +37,7 @@ The you can send messages. To do that, you need to create and Populate a
 DiscordWebhookMessage object.
 
 ```TypeScript
-import { DiscordWebhook, DiscordWebhookMessage } from "https://github.com/herkulessi/DiscordWebhook/DiscordWebhook.ts";
+import { DiscordWebhook, DiscordWebhookMessage } from "https://github.com/herkulessi/DiscordWebhook/raw/master/DiscordWebhook.ts";
 let message = new DiscordWebhookMessage()
     .setUsername('Override the Default name of the Webhook') // 32 Characters max (trimmed)
     .setAvatarUrl(new URL('http://example.com'))             // URL to the image, overrides default aatar
@@ -54,7 +54,7 @@ And finally send the message with:
 import {
   DiscordWebhook,
   DiscordWebhookMessage,
-} from "https://github.com/herkulessi/DiscordWebhook/DiscordWebhook.ts";
+} from "https://github.com/herkulessi/DiscordWebhook/raw/master/DiscordWebhook.ts";
 webhook.executeWebhook(message);
 ```
 
